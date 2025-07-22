@@ -1,49 +1,86 @@
 <!DOCTYPE html> 
 <html>
-  <head> 
+<head> 
   <title>Home Page</title> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background-color: white;
+      max-width: 400px;
+      margin: auto;
+      font-family: Arial, sans-serif;
+    }
+    img {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    p {
+      text-align: justify;
+    }
+    .button {
+      padding: 15px 30px;
+      font-size: 18px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .center {
+      text-align: center;
+      margin-top: 30px;
+    }
+  </style>
 </head> 
+
 <body> 
-  <h1>
-  T-J INTERNATIONAL RESTAURANT
-</h1> 
+<body style="padding-left: 15px; padding-right: 15px;">
+  <h1>T-J INTERNATIONAL RESTAURANT</h1> 
   
-  <body style="background-color: white;">
-    
-  <img src="IMG-20250715-WA0002.jpg" width="340">
-  <p style="margin-bottom:30px;">
-    At T-J International Restuarant, Tradition meets modernity in a harmous fusion that tantalizes the senses.
-  Savor exquisite dishes crafted from the finest ingredients,our menu showcases the best of different worlds,bringing you the rich, aromatic spices of Nigeria dishes, Chinese dishes & European dishes</p>
-  <!-- ✅ Link using image --> 
+  <img src="IMG-20250715-WA0002.jpg" alt="Main Image">
   
-  <a href="Yorubadish.html"> 
-  <h2 style="margin-top:5px;">YORUBA DISHES</h2> </a>
-    <img src="b4154578e43fbd1645d88937d7f053eb.jpg"alt="Click to go to About page." width="340">
-    <a href="Igbo.html">
-    <h2>IGBO DISHES</h2> </a>
-    <img src="b37e53dceec987e0e818d390ead2861e.jpg" width="340"
-    <a href="about.html">
-    <a href="Hausa.html">
-  <h2>HAUSA DISHES</h2> </a>
-    <img src="524d720ced6e9a329062aadd4ecc538f.jpg" width="340"
-    </a>
-    <a href="about.html">
-    <a href="Chinese.html">
-  <h2>CHINESE DISHES</h2> </a>
-    <img src="876a15043b893ae3a8fbfccb6e7bab2a.jpg" width="340"
-    </a>
-    <a href="about.html">
-    <a href="Europe.html">
-  <h2>EUROPEAN DISHES</h2> </a>
-  <img src="0f8810a80f2c3e23eef2aa2a36673db8 (1).jpg" width="340"
+  <p>
+    At T-J International Restaurant, tradition meets modernity in a harmonious fusion that tantalizes the senses.
+    Savor exquisite dishes crafted from the finest ingredients. Our menu showcases the best of different worlds, bringing you the rich, aromatic spices of Nigerian, Chinese, and European dishes.
+  </p>
+  
+  <!-- Yoruba Dish -->
+  <a href="Yorubadish.html">
+    <h2>YORUBA DISHES</h2>
+    <img src="b4154578e43fbd1645d88937d7f053eb.jpg" alt="Yoruba Dishes">
   </a>
-  <div style="text-align: center; margin-top: 30px;">
-  <a href="About page.html" style="font-size: 20px;">Go to About Page</a><br><br>
-  <button onclick="window.location.href='Contact page.html'" 
-          style="padding: 15px 30px; font-size: 18px; background-color: #4CAF50; color: white; border: none; border-radius: 5px;">
-    Contact Us
-  </button>
-</div>
+
+  <!-- Igbo Dish -->
+  <a href="Igbo.html">
+    <h2>IGBO DISHES</h2>
+    <img src="b37e53dceec987e0e818d390ead2861e.jpg" alt="Igbo Dishes">
+  </a>
+
+  <!-- Hausa Dish -->
+  <a href="Hausa.html">
+    <h2>HAUSA DISHES</h2>
+    <img src="524d720ced6e9a329062aadd4ecc538f.jpg" alt="Hausa Dishes">
+  </a>
+
+  <!-- Chinese Dish -->
+  <a href="Chinese.html">
+    <h2>CHINESE DISHES</h2>
+    <img src="876a15043b893ae3a8fbfccb6e7bab2a.jpg" alt="Chinese Dishes">
+  </a>
+
+  <!-- European Dish -->
+  <a href="Europe.html">
+    <h2>EUROPEAN DISHES</h2>
+    <img src="0f8810a80f2c3e23eef2aa2a36673db8 (1).jpg" alt="European Dishes">
+  </a>
+
+  <div class="center">
+    <a href="About page.html" style="font-size: 20px;">Go to About Page</a><br><br>
+    <button onclick="window.location.href='Contact page.html'" class="button">Contact Us</button>
+  </div>
 
 </body> 
-</html> 
+</html>
