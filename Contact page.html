@@ -1,15 +1,80 @@
 <!DOCTYPE html> 
 <html> 
-<head> 
+<head>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Your CSS goes here */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('your-background.jpg'); /* or use a gradient */
+      background-size: cover;
+      background-position: center;
+    }
+
+    .contact-form {
+      background-color: rgba(0, 0, 0, 0.5);
+      max-width: 400px;
+      margin: auto;
+      margin-top: 50px;
+      padding: 20px;
+      border-radius: 10px;
+      color: white;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: none;
+      border-bottom: 2px solid white;
+      background: transparent;
+      color: white;
+    }
+
+    input::placeholder, textarea::placeholder {
+      color: #ccc;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: white;
+      cursor: pointer;
+    }
+
+    h2 {
+      text-align: center;
+      color: gold;
+    }
+  </style>
   <title>Contact Page</title> 
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head> 
-<body> 
- <body style="background-color: white;">
-  <h1>Contact Information</h1> 
-  <h3>Email:
-  tjinternationalrestuarant@gmail.com</h3> 
-  <h3>Call/WhatsApp: 08113001930 // 09129253968</h3>
-  <a href="index.html">Back to Home</a> 
-</body> 
+<body>
+  <div class="contact-form">
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/yourFormID" method="POST">
+      <label>Name:</label>
+      <input type="text" name="name" placeholder="Enter your name" required>
+      
+      <label>Email:</label>
+      <input type="email" name="email" placeholder="Enter your email" required>
+      
+      <label>Message:</label>
+      <textarea name="message" rows="5" placeholder="Place Your Order..." required></textarea>
+      
+      <button type="submit">Send Message</button>
+    </form>
+    <h3>For Complaints / Enquiries Whatsapp: 08113001930</h3>
+  </div>
+</body>
 </html> 
